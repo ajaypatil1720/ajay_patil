@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit2 C2</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+   
+
+      #main>#banner{
+        background-color: #273085;
+        width:80%;
+       
+        margin:auto;
+        display: flex;
+        border-radius:30px;
+        justify-content: space-evenly;
+        justify-content: space-between;
+      }
+
+      /* #banner>div{
+        margin:auto;
+        padding:15px;
+        margin-left:20px;
+      } */
+      #banner>div>h2{
+        display: block;
+        color:white;
+        margin:auto;
+        margin-left:50px;
+        margin-top:40px;
+      }
+      #banner>div>h2+p{
+        color:white;
+        margin-top:10px;
+        margin-left:50px;
+      }
+
+      #banner>div>h2+p+button{
+        color:black;
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius:10px;
+        padding:10px;
+        margin-top:10px;
+        margin-left:50px;
+      }
+
+      #banner>div+div>img{
+        height:200px;
+        width:80%;
+        margin-right:80px;
+      }
+
+ /* ----------banner conding end-------------------------------------------------------- */ 
+
+      #main>#services{
+        /* background-color: white; */
+        width:80%;
+       
+       margin:auto;
+       display: grid;
+       /* border-radius:30px; */
+       /* justify-content: space-evenly;
+       justify-content: space-between; */
+
+       grid-template-columns:repeat(6,180px);
+       grid-template-rows: repeat(1,280px);
+       grid-column-gap: 11px;
+       /* justify-content: center; */
+       justify-content: space-evenly;
+       /* align-items: center; */
+       /* border:1px solid; */
+
+       margin-top:10px;
+      }
+
+      #main>#services>div{
+        /* border:1px solid red; */
+        /* height:300px; */
+        /* width:250px; */
+        background-color: white;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+
+        /* padding:10px; */
+      }
+
+      #main>#services>div>div>img{
+        /* border:1px solid red; */
+        margin:auto;
+        height:150px;
+        width:50%;
+      }
+
+      #main>#services>div>div{
+        background-color:#aecfed;
+        display:flex;
+        justify-content: center;
+      }
+
+      #main>#services>div>div+h2{
+        font-size:20px;
+        margin-top:10px;
+        margin-left:15px;
+        font-weight:bold;
+        /* text-align: center; */
+        
+      }
+
+      #main>#services>div>div+h2+p{
+        /* font-size:20px; */
+        margin-top:10px;
+        margin-left:15px;
+        font-weight:bold;
+        color:grey
+        /* text-align: center; */
+        
+      }
+/* ----------Services section---------------------- */
+
+
+      /* #main>#services>div>div>{
+        background-color: aqua;
+        /* width:100%; */
+       
+
+
+
+
+      /* Medium Screen */
+      @media only screen and (min-width: 500px) and (max-width: 768px) {
+        #main>#banner{
+        /* background-color: #273085; */
+        width:80%;
+        margin:auto;
+        display: flex;
+        flex-direction:column;
+        border-radius:30px;
+        justify-content: space-evenly;
+        justify-content: space-between;
+      }
+      #banner>div+div>img{
+        height:200px;
+        width:80%;
+        margin:auto;
+        margin-left:30px;
+        /* margin-right:100px; */
+        
+      }
+
+      #banner>div>h2{
+        display: block;
+        color:white;
+        font-size:40px;
+        margin:auto;
+        margin-left:18px;
+        margin-top:20px;
+      }
+      #banner>div>h2+p{
+        color:white;
+        margin-top:5px;
+        margin-left:20px;
+      }
+
+      #banner>div>h2+p+button{
+        color:black;
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius:10px;
+        padding:10px;
+        margin-top:10px;
+        margin-left:20px;
+      }
+
+      /* ------------------------------------------------------------- */
+
+      #main>#services{
+        /* background-color: white; */
+        width:80%;
+       
+       margin:auto;
+       display: grid;
+       /* border-radius:30px; */
+       /* justify-content: space-evenly;
+       justify-content: space-between; */
+
+       grid-template-columns:repeat(3,180px);
+       grid-template-rows: repeat(2,280px);
+       grid-column-gap: 11px;
+       /* justify-content: center; */
+       justify-content: space-evenly;
+       /* align-items: center; */
+       /* border:1px solid; */
+
+       margin-top:10px;
+      }
+
+      #main>#services>div{
+        /* border:1px solid red; */
+        /* height:300px; */
+        /* width:250px; */
+        background-color: white;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+
+        /* padding:10px; */
+      }
+
+      #main>#services>div>div>img{
+        /* border:1px solid red; */
+        margin:auto;
+        height:150px;
+        width:50%;
+      }
+
+      #main>#services>div>div{
+        background-color:#aecfed;
+        display:flex;
+        justify-content: center;
+      }
+
+      #main>#services>div>div+h2{
+        font-size:20px;
+        margin-top:10px;
+        margin-left:15px;
+        font-weight:bold;
+        /* text-align: center; */
+        
+      }
+
+      #main>#services>div>div+h2+p{
+        /* font-size:20px; */
+        margin-top:10px;
+        margin-left:15px;
+        font-weight:bold;
+        color:grey
+        /* text-align: center; */
+        
+      }
+/* ----------Services section---------------------- */
+
+
+
+
+
+
+
+/* ------------------Work Section------------------------------------- */
+
+      }
+
+      /* Small Screen */
+      @media only screen and (min-width: 320px) and (max-width: 499px) {
+
+
+        #main>#banner{
+        /* background-color: #273085; */
+        width:80%;
+        margin:auto;
+        display: flex;
+        flex-direction:column;
+        border-radius:30px;
+        justify-content: space-evenly;
+        justify-content: space-between;
+      }
+      #banner>div+div>img{
+        height:200px;
+        width:80%;
+        margin:auto;
+        margin-left:30px;
+        /* margin-right:100px; */
+        
+      }
+
+      #banner>div>h2{
+        display: block;
+        color:white;
+        font-size:40px;
+        margin:auto;
+        margin-left:18px;
+        margin-top:20px;
+      }
+      #banner>div>h2+p{
+        color:white;
+        margin-top:5px;
+        margin-left:20px;
+      }
+
+      #banner>div>h2+p+button{
+        color:black;
+        display: block;
+        background-color: white;
+        border:none;
+        border-radius:10px;
+        padding:10px;
+        margin-top:10px;
+        margin-left:20px;
+      }
+
+      /* ------------------------------------------------------------------------------- */
+
+
+
+      #main>#services{
+        /* background-color: white; */
+        width:80%;
+       
+       margin:auto;
+       display: grid;
+       /* border-radius:30px; */
+       /* justify-content: space-evenly;
+       justify-content: space-between; */
+
+       grid-template-columns:repeat(2,180px);
+       grid-template-rows: repeat(3,280px);
+       grid-column-gap: 11px;
+       /* justify-content: center; */
+       justify-content: space-evenly;
+       /* align-items: center; */
+       /* border:1px solid; */
+
+       margin-top:10px;
+      }
+
+      #main>#services>div{
+        /* border:1px solid red; */
+        /* height:300px; */
+        /* width:250px; */
+        background-color: white;
+        box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
+
+        /* padding:10px; */
+      }
+
+      #main>#services>div>div>img{
+        /* border:1px solid red; */
+        margin:auto;
+        height:150px;
+        width:50%;
+      }
+
+      #main>#services>div>div{
+        background-color:#aecfed;
+        display:flex;
+        justify-content: center;
+      }
+
+      #main>#services>div>div+h2{
+        font-size:20px;
+        margin-top:10px;
+        margin-left:15px;
+        font-weight:bold;
+        /* text-align: center; */
+        
+      }
+
+      #main>#services>div>div+h2+p{
+        /* font-size:20px; */
+        margin-top:10px;
+        margin-left:15px;
+        font-weight:bold;
+        color:grey
+        /* text-align: center; */
+        
+      }
+/* ----------Services section---------------------- */
+      }
+
+
+  #works>h1{
+  text-align: center;
+  margin:auto;
+  margin-top:20px; 
+}
+
+
+#works>p{
+  text-align: center;
+  margin-top:20px;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="banner">
+        <!-- Here should be 2 divs one for the banner heading and button and the second is for banner image -->
+        <div>
+          <h2>You are in Safe hands</h2>
+          <p>choose the experts in end to end surgical care</p>
+          <button>Know More</button>
+        </div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="Error">
+        </div>
+      </div>
+      
+      
+      
+      <div id="services">
+        <!-- Here should be 6 divs. All of them should be in a single line for large screen. For medium and large screen refer to question statement -->
+        <div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          </div>   
+          <h2>Instance Video Consultation</h2>
+          <p>Connect within 60 secs</p>
+        </div>
+        
+          <div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+          </div>
+            <h2>Instance Video Consultation</h2>
+            <p>Connect within 60 secs</p>
+          </div>
+
+
+        <div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+        </div>  
+          <h2>Instance Video Consultation</h2>
+          <p>Connect within 60 secs</p>
+        </div>
+        
+          <div>
+          <div>
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+           </div>
+            <h2>Instance Video Consultation</h2>
+            <p>Connect within 60 secs</p>
+          </div>
+
+
+        <div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+        </div>
+          <h2>Instance Video Consultation</h2>
+          <p>Connect within 60 secs</p>
+        </div>
+
+
+        <div>
+        <div>
+          <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" alt="Error">
+        </div>
+          <h2>Instance Video Consultation</h2>
+          <p>Connect within 60 secs</p>
+        </div>
+      </div>
+     
+     
+     
+
+      <div id="works">
+        <h1>Book an appointment for an in-clinic consultation</h1>
+        <p>Find experienced doctors across all specialties</p>
+        <div>
+          <!-- Here should be 8 divs. They should be in 4 colums and two rows for large screen.For medium and large screen refer to question statement -->
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Error"></div>
+          <div><img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg" alt="Error"></div>
+          <div><img src="sp-dentist@2x.jpg" alt=""></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+      
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
